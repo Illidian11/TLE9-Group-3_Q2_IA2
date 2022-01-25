@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  background: #222;
+}
+.bg-image img {
+  position: fixed;
+  top: 0;
+  height: 450px;
+  width: 100%;
+  z-index: -1;
+}
+h1 {
+  padding: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  font-size: 5vw;
+  font-family: 'Orbitron', sans-serif;
+  background: rgb(0,0,0);
+  background: rgba(0, 0, 0, .7);
+  margin-bottom: 0;
+  -webkit-text-stroke: 2px crimson;
+  -webkit-text-fill-color: black;
+  text-shadow: 0 0 10px maroon, 0 0 40px maroon, 0 0 10px maroon;
+}
+#content {
+  position: relative;
+  width: 100%;
+  height: 2000px;
+  margin: auto;
+  background: #222;
+  color: white;
+}
+.card-1 {
+  position: relative;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%,-10%);
+  width: 1000px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #333;
+}
+.card-2 {
+  position: relative;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  width: 1000px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #333;
+}
+.card-3 {
+  position: relative;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  width: 1000px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #333;
+}
+.card-4 {
+  position: relative;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  width: 1000px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #333;
+}
+h2 {
+  padding: 30px;
+  font-family: 'Orbitron', sans-serif;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+p {
+  padding: 20px;
+  font-size: 1.5vw;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  line-height: 25px;
+  width: 100%;
+  z-index: 2;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+    box-shadow: 0 0 10px red, 0 0 40px red, 0 0 10px red;
+    background: linear-gradient(crimson, red);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.card-1:before {
+  content: "";
+  position: absolute;
+  width: 107%;
+  height: 30%;
+  box-shadow: 0 0 10px red, 0 0 40px red, 0 0 10px red;
+  background: linear-gradient(crimson, red);
+  animation: spin 4s infinite linear;
+}
+.card-1:after {
+  content: "";
+  position: absolute;
+  height: 330px;
+  width: 980px;
+  background: #222;
+  border-radius: 20px;
+}
+.card-2:before {
+  content: "";
+  position: absolute;
+  width: 107%;
+  height: 30%;
+  box-shadow: 0 0 10px red, 0 0 40px red, 0 0 10px red;
+  background: linear-gradient(crimson, red);
+  animation: spin 4s infinite linear;
+}
+.card-2:after {
+  content: "";
+  position: absolute;
+  height: 330px;
+  width: 980px;
+  background: #222;
+  border-radius: 20px;
+}
+.card-3:before {
+  content: "";
+  position: absolute;
+  width: 107%;
+  height: 30%;
+  animation: spin 4s infinite linear;
+   box-shadow: 0 0 10px red, 0 0 40px red, 0 0 10px red;
+  background: linear-gradient(crimson, red);
+}
+.card-3:after {
+  content: "";
+  position: absolute;
+  height: 330px;
+  width: 980px;
+  background: #222;
+  border-radius: 20px;
+}
+.card-4:before {
+  content: "";
+  position: absolute;
+  width: 107%;
+  height: 30%;
+  animation: spin 4s infinite linear;
+   box-shadow: 0 0 10px red, 0 0 40px red, 0 0 10px red;
+  background: linear-gradient(crimson, red);
+}
+.card-4:after {
+  content: "";
+  position: absolute;
+  height: 330px;
+  width: 980px;
+  background: #222;
+  border-radius: 20px;
+}
+#hamburger {
+  position: fixed;
+  top: 5%;
+  left: 15px;
+  transform: translate(0, -5%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background: crimson;
+  text-align: center;
+  font-size: 20px;
+  z-index: 3;
+}
+#hamburger:hover {
+  background: white;
+}
+#hamburger:after {
+  background: crimson;
+}
+#hamburger:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-top: 3px solid cyan;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid cyan;
+  border-radius: 50%;
+  animation: load 1s infinite linear;
+  box-shadow: 0 0 10px blue, 0 0 40px cyan, 0 0 10px cyan;
+}
+@keyframes load {
+  0%{
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+ul {
+  position: fixed;
+  top: 20%;
+  left: 0;
+  z-index: 3;
+  width: 12%;
+  background: rgb(185, 15, 10);
+  background: rgba(185, 15, 10, .5);
+  border: 1px solid crimson;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  height: auto;
+  display: none;
+  padding: 10px;
+}
+ul a {
+  color: transparent;
+  width: 70%;
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 20px;
+  padding: 10px;
+  -webkit-text-stroke: 1px cyan;
+  transition: .2s ease;
+}
+ul a:hover {
+  background: #222;
+  -webkit-text-stroke: 1px red;
+}
+ul a:active {
+  background: white;
+  -webkit-text-stroke: 1px maroon;
+}
+#trai {
+  display: none;
+}
+#settings {
+  position: fixed;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 70%;
+  background: darkred;
+  border: 2px solid red;
+  border-radius: 20px;
+  display: none;
+  cursor: pointer;
+}
+h3 {
+  margin: auto;
+  padding: 10px;
+  width: 80%;
+  height: 20%;
+  background: #333;
+  text-align: center;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+#settings a {
+  text-align: center;
+  padding: 20px;
+  width: 50%;
+  background: black;
+  display: block;
+  position: relative;
+  color: white;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-family: 'Orbitron',sans-serif;
+  border-radius: 20px;
+}
+#settings a:hover {
+  background: white;
+  color: black;
+}
+.cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  border: 2px solid cyan;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  z-index: 6;
+  display: none;
+}
+
+.cursor:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: cyan;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+}
+footer {
+  padding: 20px;
+  height: 140px;
+  background: #f3f2;
+  color: yellow;
+}
+footer p {
+  font-style: italic;
+  
+}
